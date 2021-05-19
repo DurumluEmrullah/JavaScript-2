@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 style="background-color: aliceblue; width: 100%; text-align: center; font-size: 50px; font-weight: bold; text-transform: uppercase; margin-top: 10px; position: absolute ; top: 0;">JavaScript#2</h1>
+    
+<div class="alarm">
+    <table>
+        <thead>
+            <tr class="title">
+                <th>Saat</th>
+                <th>Dakika</th>
+                <th>Saniye</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><input class="alarm hour" type="number"></td>
+                <td><input class="alarm min" type="number"></td>
+                <td><input class="alarm second" type="number"></td>
+            </tr>
+
+            <tr>
+                <td  colspan="3"> <button class="btnAlarm">Alarm Kur</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="alarm-area">
+        <h2 class="">Alarm </h2>
+        <p class="alarm-text"></p>
+    </div>
+</div>
+
+    <button class="btnSound">Ses Aç</button>
+    <div class="clock">
+        <div class="clock-face">
+            <div class="twelve"><span>12</span> </div>
+            <div class="three"><span>3</span></div>
+            <div class="six"><span>6</span></div>
+            <div class="nine"><span>9</span></div>
+            <div class="hand hour-hand"></div>
+            <div class="hand min-hand"></div>
+            <div class="hand second-hand"></div>
+            <div class="point"></div>
+        </div>     
+    </div>
+
+    <audio src="sound/clock.mp3"></audio>
+    <audio class="alarm-sound" src="sound/alarm.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
